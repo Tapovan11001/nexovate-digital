@@ -21,13 +21,13 @@ export function Pricing() {
         </div>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-16 items-stretch">
         {PRICING_TIERS.map((tier, index) => (
           <ScrollReveal key={tier.name} delay={index * 0.1}>
             <div
               className={
                 tier.highlighted
-                  ? "rounded-lg p-8 flex flex-col h-full transition-all duration-300 bg-navy text-white border-2 border-cyan relative md:scale-105 shadow-xl"
+                  ? "rounded-lg p-8 flex flex-col h-full transition-all duration-300 bg-navy text-white border-2 border-cyan relative shadow-xl"
                   : "rounded-lg p-8 flex flex-col h-full transition-all duration-300 bg-white border border-slate-200 hover:shadow-lg hover:-translate-y-1"
               }
             >

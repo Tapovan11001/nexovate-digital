@@ -5,6 +5,7 @@ import type {
   Testimonial,
   PricingTier,
   NavLink,
+  FAQItem,
 } from "@/types";
 
 export const NAV_LINKS: NavLink[] = [
@@ -45,6 +46,12 @@ export const SERVICES: Service[] = [
     title: "SEO Optimization",
     description:
       "Data-driven SEO strategies that boost your organic visibility, drive qualified traffic, and improve search engine rankings.",
+  },
+  {
+    icon: "Figma",
+    title: "UI/UX Design",
+    description:
+      "User-centered design that delights. We craft intuitive interfaces and seamless experiences that keep users engaged and coming back.",
   },
 ];
 
@@ -157,13 +164,14 @@ export const TESTIMONIALS: Testimonial[] = [
 export const PRICING_TIERS: PricingTier[] = [
   {
     name: "Starter",
-    price: "₹29,999",
+    price: "₹14,999",
     description: "Perfect for small businesses getting started online",
     features: [
-      "1–3 Page Website",
+      "5–7 Page Website",
       "Mobile Responsive Design",
       "Basic SEO Setup",
-      "Contact Form Integration",
+      "Contact Form + WhatsApp Button",
+      "Google Maps Integration",
       "2 Rounds of Revisions",
       "30 Days Support",
     ],
@@ -171,39 +179,87 @@ export const PRICING_TIERS: PricingTier[] = [
     cta: "Get Started",
   },
   {
-    name: "Growth",
-    price: "₹74,999",
+    name: "Business",
+    price: "₹24,999",
     description: "For businesses ready to scale their digital presence",
     features: [
-      "5–8 Page Custom Website",
+      "10+ Page Custom Website",
       "Advanced Responsive Design",
       "Full SEO Optimization",
-      "CMS Integration",
-      "4 Rounds of Revisions",
+      "Razorpay Payment Integration",
+      "Booking / Appointment System",
+      "Blog Section",
+      "3 Rounds of Revisions",
       "90 Days Support",
-      "Analytics Dashboard",
-      "Speed Optimization",
     ],
     highlighted: true,
-    cta: "Most Popular",
+    cta: "Get Started",
   },
   {
     name: "Premium",
-    price: "₹1,49,999+",
-    description: "Enterprise-grade solution for maximum impact",
+    price: "₹49,999+",
+    description: "Full e-commerce solution for maximum impact",
     features: [
-      "10+ Page Custom Website",
-      "Bespoke UI/UX Design",
-      "Enterprise SEO Strategy",
-      "CMS + Training",
+      "Full E-commerce Store",
+      "Admin Dashboard + CMS",
+      "Shipping & Inventory Management",
+      "Razorpay + UPI Payments",
+      "Email Marketing Setup",
       "Unlimited Revisions",
-      "12 Months Priority Support",
+      "6 Months Priority Support",
       "Advanced Analytics",
-      "Performance Monitoring",
-      "A/B Testing Setup",
+      "Speed & Performance Optimization",
     ],
     highlighted: false,
     cta: "Contact Us",
+  },
+  {
+    name: "Monthly Care",
+    price: "₹3,999/mo",
+    description: "Ongoing maintenance so your site stays fresh and fast",
+    features: [
+      "Monthly Content Updates",
+      "Hosting & Domain Management",
+      "Security Monitoring",
+      "Performance Optimization",
+      "Priority WhatsApp Support",
+      "Monthly Analytics Report",
+    ],
+    highlighted: false,
+    cta: "Get Started",
+  },
+];
+
+export const FAQ_ITEMS: FAQItem[] = [
+  {
+    question: "How long does it take to build a website?",
+    answer:
+      "Most projects take 2\u20134 weeks from kickoff to launch. Complex e-commerce or web application projects may take 4\u20138 weeks. We\u2019ll give you a clear timeline during our strategy call.",
+  },
+  {
+    question: "What\u2019s included in the price?",
+    answer:
+      "Every package includes custom design, responsive development, basic SEO setup, and post-launch support. We also offer a Monthly Care plan for ongoing maintenance. No hidden fees \u2014 what you see is what you get.",
+  },
+  {
+    question: "Do you work with clients outside India?",
+    answer:
+      "Absolutely. We work with businesses globally. Communication happens over WhatsApp, Zoom, or email \u2014 whatever works best for you.",
+  },
+  {
+    question: "Will my website be mobile-friendly?",
+    answer:
+      "100%. Every website we build is fully responsive and tested across all devices and browsers. Mobile-first design is standard in all our projects.",
+  },
+  {
+    question: "Do you provide ongoing maintenance?",
+    answer:
+      "Yes. All packages include post-launch support (30\u2013365 days depending on the plan). We also offer monthly maintenance retainers for ongoing updates, security, and performance optimization.",
+  },
+  {
+    question: "Can I see examples of your work?",
+    answer:
+      "Of course! Check out our portfolio section above. Each project includes a live demo you can interact with to see the quality of our work firsthand.",
   },
 ];
 
